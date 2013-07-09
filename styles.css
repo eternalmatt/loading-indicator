@@ -1,25 +1,35 @@
-.container { 
+.loading-indicator { 
+	left: 45px;
+	top: 45px;
+	position: absolute;
+}
+.container {
+	border: lightgreen solid 1.5em;
+	background: lightgreen;
 	position: relative;
 }
 .left {
-    background-color: lightblue;
+	background: darkblue;
 }
 .right {
-    background-color: darkorange;
+	background: darkorange;
 }
 .cell {
     display: table-cell;
-    padding: 3em;
+    width: 6em;
+    height: 6em;
 }
 .row {
     display: table-row;
 }
 .space {
-	padding: 1.5em;
+	width: 3em;
+    height: 3em;
 }
 .mover { 
 	background-color: darkred;
-	padding: 3em;
+	width: 6em;
+    height: 6em;
 	position: absolute;
 	-webkit-animation-name: mover;
 	-webkit-animation-duration: 10s;
@@ -34,21 +44,17 @@
 	0% {
 		top: 0em;
 		left: 0em;
-		background: darkred;
 	}
 	25% { 
 		top: 0em;
 		left: 9em;
-		background: green;
 	}
 	50% {
 		top: 9em;
 		left: 9em;
-		background: yellow;
 	}
 	75% {
 		top: 9em;
 		left: 0em;
-		background: lightgray;
 	}
 }
